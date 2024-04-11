@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Calendar</button>
+        <div class="dropdown-content">
+          <a href="#">Day</a>
+          <a href="#">Month</a>
+          <a href="#">Year</a>
+          <!-- Add more calendar options here -->
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Technologies</button>
+        <div class="dropdown-content">
+          <a href="#">HTML</a>
+          <a href="#">CSS</a>
+          <a href="#">JavaScript</a>
+          <!-- Add more technology options here -->
+        </div>
+      </div>
+    </nav>
+    <div id="divclass">
+      <label for="topic">TOPIC</label>
+      <input type="text" id="topic" />
+      <label for="input">INPUT</label>
+      <textarea id="input"></textarea>
+      <br />
+      <button type="submit" onclick=" createNote()">ADD NOTE</button>
+    </div>
+    <div id="notesContainer"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

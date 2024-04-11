@@ -1,0 +1,132 @@
+/* index.css */
+
+/* Style for the input container */
+#divclass {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the input label */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the input textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px; /* Minimum height */
+}
+
+/* Style for the submit button */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the notes container */
+#notesContainer {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  position: relative; /* Position notes relative to the container */
+}
+
+/* Style for individual notes */
+.note {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Position the pin icon relative to the note */
+}
+
+/* Style for the pin icon */
+.pin {
+  position: absolute;
+  top: -10px; /* Adjust based on the size of the pin icon */
+  left: 10px; /* Adjust based on the size of the pin icon */
+  width: 20px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Style for the push pin icon */
+.push-pin {
+  width: 20px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+/* Adjust the note container to accommodate the push pin */
+.note {
+  position: relative;
+  padding-left: 30px; /* Adjust based on the width of the push pin */
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #555;
+}
